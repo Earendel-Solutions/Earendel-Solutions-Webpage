@@ -5,7 +5,7 @@ import Services from "./_components/services";
 
 export default async function Page() {
   return (
-    <div>
+    <div className="w-full overflow-x-hidden">
       <Home />
 
       <Projects />
