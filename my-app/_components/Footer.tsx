@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className=" bg-linear-to-r from-purple-600 to-black  w-full border-t border-white/10">
+    <footer className=" bg-black w-full border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-gray-400">
         <div>
           <h3 className="text-lg font-semibold text-white">Your Portfolio</h3>

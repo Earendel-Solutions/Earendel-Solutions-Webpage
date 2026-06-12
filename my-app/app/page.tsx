@@ -1,10 +1,20 @@
 export default async function Page() {
   return (
     <div className="w-full overflow-x-hidden">
-      <div className="w-screen h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-black">
-        <div className="text-3xl font-medium animate-bounce underline bg-gradient-to-r from-blue-400 to-white bg-clip-text text-transparent">
-          vercel change test
+      <div className="w-screen h-screen flex flex-row gap-4 p-20 items-center justify-center bg-gray-900">
+        <div className="pl-48 flex flex-col justify-center border border-red-400 w-full h-full">
+          <div>Available for Q3 Projects</div>
+          <div className="text-white text-7xl font-bold">
+            Transforming Ideas into Powerful Digital Solutions
+          </div>
+          <div>
+            We build stable, high-performance web ecosystems, custom mobile
+            applications, and enterprise cloud solutions that help ambitious
+            startups grow.
+          </div>
+          <div></div>
         </div>
+        <div className="border border-red-400 w-full h-full"></div>
       </div>
     </div>
   );
