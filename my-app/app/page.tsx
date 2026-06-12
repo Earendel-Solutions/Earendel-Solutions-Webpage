@@ -9,23 +9,26 @@ export default async function Page() {
             <LoaderPinwheel className="animate-ping size-3" />
             Available for Q3 Projects
           </div>
-          <div className="text-7xl font-bold">
+          <div className="text-7xl group font-bold">
             Transforming Ideas into{" "}
-            <span className="bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent">
+            <span
+              className="bg-linear-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent transition-all duration-300 group-hover:drop-shadow-[0_0_12px_rgba(147,197,253,0.8)]
+  "
+            >
               Powerful Digital Solutions
             </span>
           </div>
-          <div className="text-gray-400">
+          <div className="text-gray-400 text-xl">
             We build stable, high-performance web ecosystems, custom mobile
             applications, and enterprise cloud solutions that help ambitious
             startups grow.
           </div>
           <div className="flex gap-4">
-            <button className="flex flex-row p-4 gap-2 font-medium rounded-2xl bg-linear-to-r from-blue-600 to-purple-800">
+            <button className="flex flex-row group p-4 gap-2 font-medium rounded-2xl bg-linear-to-r from-blue-600 to-purple-800">
               Get A Free Consultation
-              <ArrowRightIcon className="text-white" />
+              <ArrowRightIcon className="text-white group-hover:rotate-180 transition-transform duration-500 ease-out" />
             </button>
-            <button className="border border-gray-800 font-medium py-4 px-6 rounded-2xl">
+            <button className="border border-gray-800 hover:border-gray-700 font-medium py-4 px-6 rounded-2xl">
               View Our Work
             </button>
           </div>
