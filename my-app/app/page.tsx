@@ -4,7 +4,7 @@ import Link from "next/link";
 export default async function Page() {
   return (
     <div className="w-full overflow-x-hidden">
-      <div className="w-screen min-h-screen flex flex-row gap-4 px-28 pt-36 items-center justify-center bg-[#030712]">
+      <div className="w-screen min-h-screen flex flex-row gap-4 px-28 py-36 items-center justify-center bg-[#030712]">
         <div className="pl-40 text-white pr-10 flex flex-col gap-8 justify-center w-full h-full">
           <div className="flex justify-center items-center gap-3 border border-gray-600 bg-blue-950 w-64 rounded-2xl p-1 text-white font-bold">
             <LoaderPinwheel className="animate-ping size-3" />
