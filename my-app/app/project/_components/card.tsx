@@ -1,6 +1,6 @@
 type CardProps  =  {
-	name : string;
-	des : string;
+	name? : string;
+	des? : string;
 }
 
 
