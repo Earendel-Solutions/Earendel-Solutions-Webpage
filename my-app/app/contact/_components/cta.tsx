@@ -2,7 +2,9 @@
 
 export default function CTA() {
   const scrollToForm = () => {
-    document.getElementById("contact-header")?.scrollIntoView({ behavior: "smooth" });
+    document
+      .getElementById("contact-form")
+      ?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -11,7 +13,8 @@ export default function CTA() {
         Ready to bring your idea to life?
       </h2>
       <p className="text-white/80 mb-8 max-w-md mx-auto ">
-        Let's talk about your project and figure out the best path forward — no commitment required.
+        Let's talk about your project and figure out the best path forward — no
+        commitment required.
       </p>
       <button
         onClick={scrollToForm}
