@@ -15,10 +15,10 @@ export default function ContactForm() {
     handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm<FormType>({
-  defaultValues: {
-    service: "",
-  },
-});
+    defaultValues: {
+      service: "",
+    },
+  });
 
   const onSubmit = async (data: FormType) => {
     console.log("Form Data -> ", data);
@@ -27,7 +27,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="border border-white rounded-3xl min-h-[550px] p-8  text-white">
+    <div  className="border border-white rounded-3xl min-h-[550px] p-8  text-white">
       <div className="space-y-3 mb-8">
         <h3 className="text-2xl font-bold text-white">Project Consultation</h3>
 
@@ -46,21 +46,31 @@ export default function ContactForm() {
           })}
           className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-gray-400 outline-none focus:border-purple-500"
         />
-        {errors.name && <p className="text-red-400 text-sm font-bold">{errors.name.message}</p>}
+        {errors.name && (
+          <p className="text-red-400 text-sm font-bold">
+            {errors.name.message}
+          </p>
+        )}
         <input
           type="email"
           placeholder="Email Address"
-          {...register("email",{
-            required:"Email is required",
-             pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: "Invalid email" },
-            
+          {...register("email", {
+            required: "Email is required",
+            pattern: {
+              value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+              message: "Invalid email",
+            },
           })}
           className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-gray-400 outline-none focus:border-purple-500"
         />
-        {errors.email && <p className="text-red-400 text-sm font-bold">{errors.email.message}</p>}
+        {errors.email && (
+          <p className="text-red-400 text-sm font-bold">
+            {errors.email.message}
+          </p>
+        )}
         <select
-          {...register("service",{
-            required:"Please select a service"
+          {...register("service", {
+            required: "Please select a service",
           })}
           className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none focus:border-purple-500"
         >
@@ -78,18 +88,26 @@ export default function ContactForm() {
             Website Development
           </option>
         </select>
-         {errors.service && <p className="text-red-400 text-sm font-bold">{errors.service.message}</p>}
+        {errors.service && (
+          <p className="text-red-400 text-sm font-bold">
+            {errors.service.message}
+          </p>
+        )}
 
         <textarea
           {...register("description", {
-              required: "Description is required",
-              minLength: { value: 10, message: "At least 10 characters" },
-            })}
+            required: "Description is required",
+            minLength: { value: 10, message: "At least 10 characters" },
+          })}
           rows={6}
           placeholder="Describe your project, goals, requirements, or challenges..."
           className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-gray-400 outline-none resize-none focus:border-purple-500"
         />
-         {errors.description && <p className="text-red-400 text-sm font-bold">{errors.description.message}</p>}
+        {errors.description && (
+          <p className="text-red-400 text-sm font-bold">
+            {errors.description.message}
+          </p>
+        )}
         <button
           type="submit"
           disabled={isSubmitting}

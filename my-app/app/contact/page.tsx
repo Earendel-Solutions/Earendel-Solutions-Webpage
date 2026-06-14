@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import ContactForm from "./_components/form";
 import FAQs from "./_components/faqs";
+import CTA from "./_components/cta";
 
 export default function Contact() {
   return (
@@ -15,7 +16,7 @@ export default function Contact() {
         className="max-w-7xl mx-auto px-6 py-24 space-y-20"
         id="contact-view-container"
       >
-        <section
+        <section 
           className="text-center max-w-3xl mx-auto space-y-4"
           id="contact-header"
         >
@@ -94,21 +95,21 @@ export default function Contact() {
             </div>
           </div>
 
-          <ContactForm/>
-
+          <div >
+            <ContactForm />
+          </div>
           
-
         </section>
 
         <section id="faq">
           <div className="border border-white rounded-3xl min-h-[400px] p-8 max-w-5xl mx-auto">
-            <FAQs/>
+            <FAQs />
           </div>
         </section>
 
         <section id="cta">
           <div className="border border-white rounded-3xl min-h-[250px] p-12 flex items-center justify-center max-w-5xl mx-auto">
-            CTA Placeholder
+            <CTA/>
           </div>
         </section>
       </div>
