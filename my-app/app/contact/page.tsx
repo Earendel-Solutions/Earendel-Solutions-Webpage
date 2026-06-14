@@ -6,6 +6,7 @@ import {
   Clock3,
 } from "lucide-react";
 import ContactForm from "./_components/form";
+import FAQs from "./_components/faqs";
 
 export default function Contact() {
   return (
@@ -101,7 +102,7 @@ export default function Contact() {
 
         <section id="faq">
           <div className="border border-white rounded-3xl min-h-[400px] p-8 max-w-5xl mx-auto">
-            FAQ Placeholder
+            <FAQs/>
           </div>
         </section>
 
