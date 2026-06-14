@@ -27,7 +27,14 @@ export default function ContactForm() {
   };
 
   return (
-    <div  className="border border-white rounded-3xl min-h-[550px] p-8  text-white">
+    <div className="
+    min-h-[550px] p-8 text-white rounded-3xl backdrop-blur-md bg-black/40
+    ring-1 ring-purple-500/30
+    transition-all duration-500 ease-in-out
+    [box-shadow:inset_0_1px_0_0_rgba(168,85,247,0.4),inset_0_-1px_0_0_rgba(168,85,247,0.1),inset_1px_0_0_0_rgba(168,85,247,0.2),inset_-1px_0_0_0_rgba(168,85,247,0.2),0_0_24px_0_rgba(168,85,247,0.15)]
+    hover:ring-purple-400/60
+    hover:[box-shadow:inset_0_1px_0_0_rgba(168,85,247,0.6),inset_0_-1px_0_0_rgba(168,85,247,0.2),inset_1px_0_0_0_rgba(168,85,247,0.3),inset_-1px_0_0_0_rgba(168,85,247,0.3),0_0_60px_8px_rgba(168,85,247,0.35),0_0_120px_16px_rgba(168,85,247,0.15)]
+    ">
       <div className="space-y-3 mb-8">
         <h3 className="text-2xl font-bold text-white">Project Consultation</h3>
 
@@ -74,11 +81,11 @@ export default function ContactForm() {
           })}
           className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none focus:border-purple-500"
         >
-          <option value="" disabled className="bg-black/90 text-white">
+          <option value="" disabled className="bg-black/90 text-white ">
             Select Service
           </option>
 
-          <option className="bg-black/90 text-white">UI/UX Design</option>
+          <option className="bg-black/90 text-white ">UI/UX Design</option>
           <option className="bg-black/90 text-white">AI Solutions</option>
           <option className="bg-black/90 text-white">Automation</option>
           <option className="bg-black/90 text-white">Consultation</option>
