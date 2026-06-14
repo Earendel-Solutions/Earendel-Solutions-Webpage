@@ -1,13 +1,10 @@
 "use client";
 
+import { FormType } from "@/types";
 import { useForm } from "react-hook-form";
+import { createConsultation } from "../_action";
 
-type FormType = {
-  name: string;
-  email: string;
-  service: string;
-  description: string;
-};
+
 
 export default function ContactForm() {
   const {
@@ -22,8 +19,9 @@ export default function ContactForm() {
 
   const onSubmit = async (data: FormType) => {
     console.log("Form Data -> ", data);
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    alert("Form sent");
+    const result = await createConsultation(data)
+    // alert(result?.message);
+    console.log(result);
   };
 
   return (
