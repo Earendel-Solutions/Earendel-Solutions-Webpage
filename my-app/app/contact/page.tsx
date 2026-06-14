@@ -9,7 +9,7 @@ import ContactForm from "./_components/form";
 
 export default function Contact() {
   return (
-    <div className="w-screen relative min-h-screen bg-black">
+    <div className="w-full relative min-h-screen bg-black">
       <div
         className="max-w-7xl mx-auto px-6 py-24 space-y-20"
         id="contact-view-container"
