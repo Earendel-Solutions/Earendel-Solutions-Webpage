@@ -8,7 +8,7 @@ export default function CTA() {
   };
 
   return (
-    <div className="relative group w-full text-center py-32 px-6 sm:px-12 overflow-hidden z-0">
+    <div className="relative group w-full text-center py-10 px-6 sm:px-12 overflow-hidden z-0">
       
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-full bg-purple-600/10 blur-[120px] rounded-full -z-10 pointer-events-none"></div>
 

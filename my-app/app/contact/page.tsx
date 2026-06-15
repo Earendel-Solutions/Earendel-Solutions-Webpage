@@ -12,7 +12,7 @@ export default function Contact() {
   return (
     <div className="w-full relative min-h-screen bg-black">
       <div
-        className="max-w-7xl mx-auto px-6 py-24 space-y-24"
+        className="max-w-7xl mx-auto px-6 py-24 space-y-14"
         id="contact-view-container"
       >
         <section
@@ -111,13 +111,13 @@ export default function Contact() {
         </section>
 
         <section id="faq">
-          <div className="min-h-[400px] p-8 max-w-6xl mx-auto">
+          <div className="min-h-[400px]  max-w-6xl mx-auto">
             <FAQs />
           </div>
         </section>
 
         <section id="cta">
-          <div className="min-h-[250px] p-12 flex items-center justify-center max-w-5xl mx-auto">
+          <div className="min-h-[250px]  flex items-center justify-center max-w-5xl mx-auto">
             <CTA />
           </div>
         </section>
