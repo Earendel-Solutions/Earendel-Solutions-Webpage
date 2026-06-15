@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/_components/Navbar";
 import Footer from "@/_components/Footer";
+import CursorGlitter from "@/_components/CursorGlitter"; // 1. Add the import
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,9 +31,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        {/* 2. Place the component anywhere inside the body */}
+        <CursorGlitter/>
+        
         <Navbar />
 
-        <main>{children}</main>
+        <main className="flex-grow">{children}</main>
 
         <Footer />
       </body>
