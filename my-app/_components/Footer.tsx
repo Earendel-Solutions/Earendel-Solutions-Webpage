@@ -3,13 +3,11 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="w-full bg-[#090514] border-t border-purple-950/40 relative overflow-hidden">
-      {/* Sleek top ambient borders & glows */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-4/5 h-px bg-gradient-to-r from-transparent via-fuchsia-500/30 via-purple-500/30 to-transparent" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-20 bg-gradient-to-b from-purple-500/5 to-transparent blur-xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-8 py-12">
         <div className="flex flex-col md:flex-row items-start justify-between gap-10 border-b border-purple-950/20 pb-10">
-          {/* Brand Column */}
           <div className="space-y-2 max-w-sm">
             <h3 className="text-lg font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-100 to-fuchsia-200 select-none">
               Earendel
@@ -23,7 +21,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Quick Links Column */}
           <div className="flex flex-wrap gap-x-12 gap-y-4 text-sm font-medium">
             <Link
               href="/"
@@ -52,7 +49,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Sub-Footer Meta info */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 text-xs font-medium text-purple-300/40">
           <div>© 2026 Earendel Solutions. All rights reserved.</div>
 
