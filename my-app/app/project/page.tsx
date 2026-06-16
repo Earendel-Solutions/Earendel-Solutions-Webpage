@@ -17,7 +17,11 @@ export default function Projects() {
      setSelectedId(id)
   }
   const hideCard = ():void =>{
+  	if(divRef.current){
+
 	divRef.current.className = "scale-[0] fixed top-[1oopx] left-[100px] z-[100]"
+	}
+
 	console.log("clcked")
   }
   return (
