@@ -4,7 +4,7 @@
 type CardProps  =  {
 	name? : string;
 	des? : string;
-	onClick? : ()=> void;
+	onClick? : (e:React.MouseEvent<HTMLDivElement>)=> void;
 }
 
 

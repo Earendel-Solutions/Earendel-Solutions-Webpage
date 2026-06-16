@@ -38,8 +38,8 @@ export default function Projects() {
 	
 	</div>
       	<div className="flex w-[100%]  flex items-center justify-center flex-wrap" onClick={hideCard}>
-		<Card name = "School management" des = "The software allows schools to manage all data on the web also offline" id="school-software" onClick = {(e)=>showCard(0,e)}/>
-		<Card name = "Dood wala" des = "This provides users the ability to order milk from local vendors" id="dood-wala" onClick= {(e)=>showCard(1,e)}/>
+		<Card name = "School management" des = "The software allows schools to manage all data on the web also offline" onClick = {(e)=>showCard(0,e)}/>
+		<Card name = "Dood wala" des = "This provides users the ability to order milk from local vendors" onClick= {(e)=>showCard(1,e)}/>
 		<Card/>
 		<Card/>
       	</div>
