@@ -10,7 +10,7 @@ export default function Projects() {
   const bigCardRef = useRef<HTMLDivElement>(null)
   const showCard = (id:number,event:React.MouseEvent<HTMLDivElement>):void =>{
      event.stopPropagation()
-     divRef.current.className = "origin-center transition-transform ease-linear duration-500 scale-[1] fixed top-[100px] left-[100px] z-[100]"
+     divRef.current?.className = "origin-center transition-transform ease-linear duration-500 scale-[1] fixed top-[100px] left-[100px] z-[100]"
      setSelectedId(id)
   }
   const hideCard = ():void =>{
