@@ -6,7 +6,7 @@ type Data = {
 	des:string;
 }
 type props = {
-	id?:number
+	id:number
 }
 
 
@@ -21,8 +21,8 @@ export default function BigCard({id}:props){
 	return(
 	<div  className = "flex flex-wrap justify-evenly w-[70%] h-[500px] mx-auto p-[30px] rounded-xl text-white  bg-black shadow-2xl drop-shadow-lg shadow-violet-700 ring ]">
 		<div className="text-white outline-[2px] border-white w-[400px] h-[200px] basis-[40%]">image</div>
-		<div className="text-white text-center w-[400px] h-[200px] basis-[40%]">{data[id]?.name}</div>
-		<div className="text-white  w-[400px] h-[200px] basis-[40%]">{data[id]?.des}</div>
+		<div className="text-white text-center w-[400px] h-[200px] basis-[40%]">{data[id].name}</div>
+		<div className="text-white  w-[400px] h-[200px] basis-[40%]">{data[id].des}</div>
 		<div className="text-white outline-[2px] border-white w-[400px] h-[200px] basis-[40%]">image</div>
 
 
