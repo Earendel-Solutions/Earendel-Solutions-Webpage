@@ -41,6 +41,12 @@ export default function Footer() {
               Services
             </Link>
             <Link
+              href="/about"
+              className="text-purple-200/60 hover:text-purple-400 hover:drop-shadow-[0_0_6px_rgba(168,85,247,0.5)] transition-all duration-300"
+            >
+              AboutUs
+            </Link>
+            <Link
               href="/contact"
               className="text-purple-200/60 hover:text-purple-400 hover:drop-shadow-[0_0_6px_rgba(168,85,247,0.5)] transition-all duration-300"
             >
