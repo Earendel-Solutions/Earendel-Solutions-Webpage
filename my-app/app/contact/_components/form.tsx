@@ -68,7 +68,7 @@ export default function ContactForm() {
     hover:[box-shadow:inset_0_1px_0_0_rgba(168,85,247,0.6),inset_0_-1px_0_0_rgba(168,85,247,0.2),inset_1px_0_0_0_rgba(168,85,247,0.3),inset_-1px_0_0_0_rgba(168,85,247,0.3),0_0_60px_8px_rgba(168,85,247,0.35),0_0_120px_16px_rgba(168,85,247,0.15)]
     ">
       <div className="space-y-3 mb-8">
-        <h3 className="text-2xl font-bold text-white">Project Consultation</h3>
+        <h3 className="text-3xl font-bold text-white">Project Consultation</h3>
         <p className="text-[#c2c6d6]">
           Tell us about your project and we'll get back to you within 24 hours.
         </p>
