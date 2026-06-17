@@ -45,6 +45,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "Projects", href: "/project" },
     { name: "Services", href: "/services" },
+    { name: "About Us", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -62,7 +63,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <div className="hidden md:flex items-center justify-center gap-8 font-medium">
+        <div className="hidden md:flex items-center justify-center gap-8 font-medium whitespace-nowrap">
           {navLinks.map((link) => (
             <Link
               key={link.href}

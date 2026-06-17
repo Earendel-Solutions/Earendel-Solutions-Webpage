@@ -37,7 +37,7 @@ export default async function Page() {
     <div className="w-full overflow-x-hidden bg-[#090514]">
       <div className="w-full border-b border-purple-950/30 min-h-screen flex xl:flex-row flex-col gap-12 xl:gap-6 px-4 sm:px-8 md:px-16 xl:px-24 items-center justify-center bg-[#090514] py-24 md:py-32 xl:py-20 overflow-x-hidden">
         <div className="w-full xl:w-1/2 h-full flex flex-col justify-center gap-8 md:gap-10 max-w-3xl xl:max-w-none">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-[4rem] font-black tracking-tighter text-white leading-[1.1] group select-none xl:pr-8">
+          <h1 className="text-5xl sm:text-6xl md:text-6xl xl:text-[4rem] font-black tracking-tighter text-white leading-[1.1] group select-none xl:pr-8">
             Transforming Ideas into <br className="sm:hidden" />{" "}
             <span className="inline-block bg-linear-to-r from-purple-400 via-fuchsia-300 to-violet-400 bg-clip-text text-transparent transition-all duration-500 ease-out group-hover:drop-shadow-[0_0_35px_rgba(168,85,247,.6)]">
               Powerful Digital Solutions
