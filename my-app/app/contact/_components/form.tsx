@@ -139,7 +139,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full rounded-xl bg-purple-600 py-3 font-semibold text-white transition-all hover:bg-purple-500 disabled:opacity-50"
+          className="w-full rounded-xl bg-purple-600 py-3 font-semibold text-white transition-all hover:bg-purple-500 disabled:opacity-50 cursor-pointer"
         >
           {isSubmitting ? "Sending..." : "Book a Free Consultation"}
         </button>

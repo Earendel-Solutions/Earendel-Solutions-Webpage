@@ -44,7 +44,7 @@ export default function Footer() {
               href="/about"
               className="text-purple-200/60 hover:text-purple-400 hover:drop-shadow-[0_0_6px_rgba(168,85,247,0.5)] transition-all duration-300"
             >
-              AboutUs
+              About Us
             </Link>
             <Link
               href="/contact"

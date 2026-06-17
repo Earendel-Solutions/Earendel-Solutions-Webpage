@@ -23,7 +23,7 @@ export default function CTA() {
       
       <button
         onClick={scrollToForm}
-        className="bg-purple-600 text-white font-bold text-lg px-10 py-4 rounded-xl transition-all duration-300 hover:bg-purple-500 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] hover:-translate-y-1 active:scale-[0.98] active:translate-y-0"
+        className="cursor-pointer bg-purple-600 text-white font-bold text-lg px-10 py-4 rounded-xl transition-all duration-300 hover:bg-purple-500 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] hover:-translate-y-1 active:scale-[0.98] active:translate-y-0"
       >
         Book a Free Consultation
       </button>
