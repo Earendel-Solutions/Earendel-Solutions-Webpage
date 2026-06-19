@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Oswald,
+  Inter,
+  Space_Grotesk,
+  Sora,
+  Plus_Jakarta_Sans,
+} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/_components/Navbar";
 import Footer from "@/_components/Footer";
@@ -10,10 +18,30 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
+  // weight: ["300", "400", "500", "600", "700"],
+  // display: "swap",
 });
+
+const sora = Sora({
+  subsets: ["latin"],
+  variable: "--font-sora",
+  // weight: ["300", "400", "500", "600", "700"],
+  // display: "swap",
+});
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-plusjakartasans",
+});
+
+// const spaceGrotesk = Space_Grotesk({
+//   subsets: ["latin"],
+//   weight: ["300", "400", "500", "600", "700"],
+//   display: "swap",
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -28,12 +56,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${sora.variable} ${plusJakartaSans.className} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         {/* 2. Place the component anywhere inside the body */}
-        <CursorGlitter/>
-        
+        <CursorGlitter />
+
         <Navbar />
 
         <main className="flex-grow">{children}</main>
